@@ -1,0 +1,11 @@
+{
+    "num_nodes": 203769,
+    "num_edges": 234355,
+    "num_features": 166,
+    "num_time_steps": 49,
+    "class_distribution": {
+        "illicit": 4545,
+        "licit": 42019,
+        "unknown": 157205
+    }
+}

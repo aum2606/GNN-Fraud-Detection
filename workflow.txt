@@ -1,0 +1,54 @@
+start by creating a venv using conda and activate it and install the required packages
+Goal: Detect fraudulent transactions in a blockchain network (e.g., Bitcoin) by modeling transactions as a graph and using GNNs to identify suspicious patterns.
+also add features like
+Temporal Dynamics:
+
+    Use Temporal Graph Networks (TGNs) to model evolving transaction patterns over time.
+
+    Example: Update node embeddings as new transactions arrive
+Scalability:
+
+    For large graphs, use subgraph sampling 
+
+
+
+Data loading and Preprocessing:
+    Loading Data:
+    Load the node features, edge list, and labels from the provided CSV files.
+    convert it into a graph format compatible with PyTorch Geometric.
+    Handle class imbalance (only 2% of transactions are illicit).
+    Split the graph into training, validation, and test sets temporally (e.g., use time steps 1–30 for training, 31–40 for validation, 41–49 for testing).
+
+Graph Construction
+
+    Use PyTorch Geometric to represent the graph and handle mini-batching.
+
+    Optional: Add node/edge features (e.g., transaction amounts, timestamps).
+
+Model Architecture (GAT)
+
+    Build a GNN with Graph Attention Layers to capture transaction relationships
+
+Training
+
+    Use a weighted loss function (to handle class imbalance).
+
+    Train with temporal cross-validation to avoid data leakage.
+
+    Key Libraries: PyTorch Lightning for training pipelines.
+
+Evaluation
+
+    Metrics: AUC-ROC (critical for imbalanced data), F1-score, Precision/Recall.
+
+    Compare against baselines (e.g., XGBoost on node features only).
+
+
+tools used:
+    PyTorch Geometric: Graph ML library for GNN implementation.
+
+    DGL: Alternative to PyTorch Geometric.
+
+    NetworkX/Gephi: For graph visualization.
+
+    Weights & Biases: Experiment tracking.

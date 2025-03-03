@@ -1,0 +1,43 @@
+# GNN Fraud Detection Project Files
+
+## Core Project Files (Essential)
+- src/main.py                      # Main entry point for running the project
+- src/train.py                     # Core training functionality
+- src/evaluate.py                  # Core evaluation functionality
+- src/models/gat.py                # Graph Attention Network model
+- src/models/tgn.py                # Temporal Graph Neural Network model
+- src/data/dataset.py              # Dataset loading and processing
+- src/utils/metrics.py             # Evaluation metrics calculation
+- src/utils/visualization.py       # Core visualization utilities
+- src/config.py                    # Project configuration
+- requirements.txt                 # Project dependencies
+- README.md                        # Project documentation
+
+## Supplementary Files (Can be removed if needed)
+- generate_graph_visualizations.py # Script for generating graph visualizations
+- simple_inference.py              # Script for inference on specific transactions
+- compare_gnn_models.py            # Script for comparing model performance
+- gnn_model_comparison_report.md   # Report on model comparison
+- project_summary.md               # Summary of the project
+- visualization_summary.md         # Summary of visualizations
+- workflow.txt                     # Development workflow notes
+- project_files.txt                # This file
+
+## Generated Output Files (Can be regenerated)
+- results/full_graph_visualization.png
+- results/fraudulent_subgraph_visualization.png
+- results/class_graph_visualization.png
+- results/prediction_visualization.png
+- results/transaction_*_analysis.png
+- results/gat_model.pt
+- results/tgn_model.pt
+- results/training_history_*.png
+- results/roc_curve_*.png
+- results/pr_curve_*.png
+- results/confusion_matrix_*.png
+
+## Notes
+1. The core project files are essential for the functioning of the GNN fraud detection system.
+2. Supplementary files provide additional functionality and documentation but are not critical for the core functionality.
+3. Generated output files can be regenerated using the core and supplementary scripts.
+4. Data files are not listed here but are essential for running the project (typically stored in a data/ directory).
